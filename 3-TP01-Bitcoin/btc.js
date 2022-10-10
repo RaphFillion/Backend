@@ -2,9 +2,7 @@
 const axios = require('axios')
 
 async function main() {
-  const currency = process.argv[2]
-    ? process.argv[2].toUpperCase()
-    : 'USD';
+  const currency = process.argv[2] ? process.argv[2].toUpperCase() : 'USD';
 
   try {
     // déstructuration => data = response.data
